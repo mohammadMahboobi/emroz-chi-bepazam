@@ -1,0 +1,11 @@
+html {
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  direction: inherit;
+  padding: inherit;
+  margin: inherit;
+}
