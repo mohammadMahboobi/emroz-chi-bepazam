@@ -1,11 +1,160 @@
+@font-face {
+  font-family: IRANSans;
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/woff/IRANSansFaNum.woff") format("woff"),
+    url("assets/fonts/woff2/IRANSansFaNum.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: IRANSans;
+  font-style: bold;
+  font-weight: 700;
+  src: url("assets/fonts/woff/IRANSansFaNum_Bold.woff") format("woff"),
+    url("assets/fonts/woff2/IRANSansFaNum_Bold.woff2") format("woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   direction: rtl;
-  padding: 0;
-  margin: 0;
+  font-size: 1vw;
+  font-family: IRANSans;
+}
+
+@media (max-width: 1500px) {
+  html {
+    font-size: 1.2vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 1.5vh;
+  }
 }
 
 body {
-  direction: inherit;
-  padding: inherit;
-  margin: inherit;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  padding: 2% 5%;
+}
+
+div.line {
+  height: 1px;
+  background-color: #707070;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 2.5rem;
+  display: inline-block;
+}
+
+section.header {
+  width: 100%;
+  padding-bottom: 1%;
+}
+
+@media (max-width: 1000px) {
+  section.header {
+    padding-bottom: 2vh;
+  }
+}
+
+section.content {
+  width: 100%;
+  height: 85vh;
+  padding-top: 1.5%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1000px) {
+  section.content {
+    padding-top: 2vh;
+  }
+}
+
+p.food-name {
+  color: #f29b38;
+}
+
+div.back-effect {
+  position: fixed;
+  bottom: -100%;
+  top: 40%;
+  left: -20%;
+  right: -20%;
+  background-color: #f29b38;
+  border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+  div.back-effect {
+    top: 50%;
+    left: -50%;
+    right: -50%;
+  }
+}
+
+.content .box {
+  flex-grow: 1;
+  z-index: 1;
+  padding: 2vh 0 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+@media (max-width: 800px) {
+  .content .box {
+    justify-content: center;
+  }
+}
+
+div.food-img {
+  height: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: bisque;
+  border: 2px solid #707070;
+}
+
+@media (max-width: 800px) {
+  div.food-img {
+    width: 70%;
+    height: auto;
+  }
+}
+
+button {
+  padding: 1rem 5rem;
+  font-size: 1.5rem;
+  font-family: IranSans;
+  font-weight: bold;
+  background-color: white;
+  color: #444444;
+  border: 0;
+  border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  button {
+    padding: 1rem 7rem;
+    border-radius: 15px;
+  }
 }
