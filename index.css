@@ -26,6 +26,7 @@ html {
   direction: rtl;
   font-size: 1vw;
   font-family: IRANSans;
+  background: #f29b38;
 }
 
 @media (max-width: 1500px) {
@@ -47,15 +48,8 @@ body {
   overflow: hidden;
 }
 
-html,
-body {
-  height: 100%;
-  background: #f29b38;
-}
-
-body {
-  min-height: 100dvh;
-  padding-bottom: env(safe-area-inset-bottom);
+.wrapper {
+  background: white;
 }
 
 .container {
